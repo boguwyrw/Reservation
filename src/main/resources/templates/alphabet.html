@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: links">
+</head>
+<body>
+
+<div th:replace="fragments :: header"></div>
+
+<div class="container marketing">
+<h2>
+    <table>
+        <tr th:each="i : ${#numbers.sequence(0, repetition)}">
+            <td th:each="letter: ${alphabet}">
+                <p th:text="${letter}"></p>
+            </td>
+        </tr>
+    </table>
+</h2>
+</div>
+
+    <div th:replace="fragments :: footer"></div>
+</body>
+</html>
