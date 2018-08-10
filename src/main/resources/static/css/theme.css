@@ -147,3 +147,7 @@ th {
 .table-row{
     border: 1px lightskyblue solid;
 }
+
+.error_message{
+    color: red !important;
+}
